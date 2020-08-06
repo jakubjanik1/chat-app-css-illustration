@@ -1,0 +1,31 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    background: hsl(270, 20%, 96%);
+}
+
+.smartphone {
+    background: hsl(0, 0%, 100%);
+    padding: 0.75rem;
+    height: 500px;
+    width: 250px;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.smartphone::before {
+    content: '';
+    position: absolute;
+    top: 0.75rem;
+    left: 50%;
+    height: 1.25rem;
+    width: 50%;
+    transform: translateX(-50%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 0 0 1rem 1rem;
+}
+
+.smartphone__header {
+    height: 65px;
+    background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 1.25rem 1.25rem 0.25rem 0.25rem;
+}
