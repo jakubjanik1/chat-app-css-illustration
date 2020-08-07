@@ -10,6 +10,8 @@ body {
     width: 250px;
     border-radius: 2rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .smartphone::before {
@@ -24,8 +26,64 @@ body {
     border-radius: 0 0 1rem 1rem;
 }
 
-.smartphone__header {
+.app-header {
     height: 65px;
     background: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
     border-radius: 1.25rem 1.25rem 0.25rem 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    padding: 1.25rem 1rem 0 1rem;
+}
+
+.arrow-left-icon {
+    border-width: 2px 0 0 2px;
+    border-color: hsl(276, 100%, 81%);
+    border-color: #f1d7f8;
+    border-style: solid;
+    width: 4px;
+    height: 4px;
+    transform: rotate(-45deg);
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid hsl(276, 100%, 81%);
+    border: 2px solid #f1d7f8;
+}
+
+.user {
+    color: hsl(276, 100%, 81%);
+    color: #f1d7f8;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.status {
+    color: hsl(276, 100%, 81%);
+    font-size: 0.5rem;
+}
+
+.ellipsis-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-left: auto;
+}
+
+.ellipsis-icon div {
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    background: hsl(276, 100%, 81%);
+    background: #ffaeff;
+}
+
+.app-content {
+    background: hsl(270, 20%, 96%);
+    border-radius: 0 0 1.25rem 1.25rem;
+    flex: 1;
 }
