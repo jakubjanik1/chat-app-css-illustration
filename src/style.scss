@@ -12,18 +12,18 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-}
 
-.smartphone::before {
-    content: '';
-    position: absolute;
-    top: 0.75rem;
-    left: 50%;
-    height: 1.25rem;
-    width: 50%;
-    transform: translateX(-50%);
-    background: hsl(0, 0%, 100%);
-    border-radius: 0 0 1rem 1rem;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0.75rem;
+        left: 50%;
+        height: 1.25rem;
+        width: 50%;
+        transform: translateX(-50%);
+        background: hsl(0, 0%, 100%);
+        border-radius: 0 0 1rem 1rem;
+    }
 }
 
 .app-header {
@@ -39,7 +39,6 @@ body {
 
 .arrow-left-icon {
     border-width: 2px 0 0 2px;
-    border-color: hsl(276, 100%, 81%);
     border-color: #f1d7f8;
     border-style: solid;
     width: 4px;
@@ -51,12 +50,10 @@ body {
     border-radius: 50%;
     width: 1.25rem;
     height: 1.25rem;
-    border: 2px solid hsl(276, 100%, 81%);
     border: 2px solid #f1d7f8;
 }
 
 .user {
-    color: hsl(276, 100%, 81%);
     color: #f1d7f8;
     font-weight: 500;
     font-size: 0.9rem;
@@ -72,15 +69,15 @@ body {
     flex-direction: column;
     gap: 1px;
     margin-left: auto;
+
+    div {
+        border-radius: 50%;
+        width: 3px;
+        height: 3px;
+        background: #ffaeff;
+    }
 }
 
-.ellipsis-icon div {
-    border-radius: 50%;
-    width: 3px;
-    height: 3px;
-    background: hsl(276, 100%, 81%);
-    background: #ffaeff;
-}
 
 .app-content {
     background: hsl(270, 20%, 96%);
@@ -96,39 +93,39 @@ body {
     font-size: 0.5rem;
     padding: 0.5rem;
     max-width: 50%;
-}
 
-.message-left {
-    background: #ede5f4;
-    color: hsl(276, 55%, 52%);
-    border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
-}
+    &-left {
+        background: #ede5f4;
+        color: hsl(276, 55%, 52%);
+        border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
+    }
 
-.message-right {
-    background: #fff;
-    color: hsl(271, 15%, 43%);
-    border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
-    align-self: flex-end;
-}
+    &-right {
+        background: #fff;
+        color: hsl(271, 15%, 43%);
+        border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
+        align-self: flex-end;
+    }
 
-.message-images {
-    display: flex;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    max-width: unset;
-    padding: 0;
-}
+    &-images {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+        max-width: unset;
+        padding: 0;
 
-.message-images > img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 0.5rem;
-}
+        img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 0.5rem;
+        }
+    }
 
-.message-left + .message-images, .message-left + .message-right {
-    margin-top: 0.5rem;
-}
+    &-left + &-images, &-left + &-right {
+        margin-top: 0.5rem;
+    }
 
-.message-right + .message-left {
-    margin-top: 0.5rem;
+    &-right + &-left {
+        margin-top: 0.5rem;
+    }
 }
