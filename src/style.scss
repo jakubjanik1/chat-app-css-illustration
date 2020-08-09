@@ -86,13 +86,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
 }
 
 .message {
     font-size: 0.5rem;
     padding: 0.5rem;
-    max-width: 50%;
+    max-width: 51%;
 
     &-left {
         background: #ede5f4;
@@ -127,5 +127,43 @@ body {
 
     &-right + &-left {
         margin-top: 0.5rem;
+    }
+}
+
+.add-message {
+    display: flex;
+    background: #fff;
+    padding: 0.4rem;
+    padding-left: 1rem;
+    border-radius: 1.25rem;
+    margin-top: auto;
+
+    input {
+        border: 0;
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: hsl(206, 6%, 79%);
+        flex: 1;
+
+        &::placeholder {
+            color: hsl(206, 6%, 79%);
+        }
+
+        &:focus {
+            outline: transparent;
+        }
+    }
+
+    button {
+        border: 0;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        background: hsl(271, 36%, 24%);
+        color: #fff;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
