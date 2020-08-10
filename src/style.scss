@@ -1,6 +1,23 @@
 body {
     font-family: 'Rubik', sans-serif;
     background: hsl(270, 20%, 96%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 150px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -175px;
+        background: red;
+        width: 520px;
+        height: 90%;
+        border-radius: 0 0 250px 250px;
+        background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    }
 }
 
 .smartphone {
@@ -12,6 +29,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2);
 
     &::before {
         content: '';
@@ -165,5 +183,20 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+}
+
+.page-intro {
+    width: 450px;
+
+    h1 {
+        color: hsl(271, 36%, 24%);
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+
+    p {
+        color: hsl(270, 7%, 64%);
+        line-height: 2rem;
     }
 }
