@@ -106,13 +106,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    padding: 1rem 0.5rem;
+    padding: 0.7rem 0.5rem;
 }
 
 .message {
     font-size: 0.5rem;
     padding: 0.5rem;
-    max-width: 51%;
+    max-width: 49%;
 
     &-left {
         background: #ede5f4;
@@ -148,12 +148,40 @@ body {
     &-right + &-left {
         margin-top: 0.5rem;
     }
+
+    &-pricing {
+        background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+        color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem;
+        padding-right: 1rem;
+        border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
+        max-width: 65%;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid hsl(276, 100%, 81%);
+}
+
+.choice {
+    font-size: 0.5rem;
+}
+
+.price {
+    margin-left: auto;
+    font-weight: 700;
 }
 
 .add-message {
     display: flex;
     background: #fff;
-    padding: 0.4rem;
+    padding: 0.3rem;
     padding-left: 1rem;
     border-radius: 1.25rem;
     margin-top: auto;
@@ -177,8 +205,8 @@ body {
     button {
         border: 0;
         border-radius: 50%;
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         background: hsl(271, 36%, 24%);
         color: #fff;
         font-size: 2rem;
@@ -213,5 +241,16 @@ body {
         height: 82vh;
         border-radius: 25rem 25rem 0 0;
         z-index: -1;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .page-intro {
+        text-align: center;
     }
 }
