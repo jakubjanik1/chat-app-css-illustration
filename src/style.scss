@@ -57,26 +57,23 @@ body {
     padding: 1.25rem 1rem 0 1rem;
 }
 
-.arrow-left-icon {
-    border-width: 2px 0 0 2px;
-    border-color: #f1d7f8;
-    border-style: solid;
-    width: 4px;
-    height: 4px;
-    transform: rotate(-45deg);
+.chevron-left-icon {
+    margin-left: -3px;
+    margin-right: -3px;
 }
 
 .avatar {
     border-radius: 50%;
     width: 1.25rem;
     height: 1.25rem;
-    border: 2px solid #f1d7f8;
+    padding: 1px;
+    background: #f1d7f8;
 }
 
 .user {
     color: #f1d7f8;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .status {
@@ -166,7 +163,7 @@ body {
     border-radius: 50%;
     width: 0.75rem;
     height: 0.75rem;
-    border: 2px solid hsl(276, 100%, 81%);
+    border: 2px solid #e75bfe;
 }
 
 .choice {
@@ -176,6 +173,7 @@ body {
 .price {
     margin-left: auto;
     font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .add-message {
