@@ -5,25 +5,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    gap: 150px;
     overflow: hidden;
 }
 
 .smartphone {
     background: hsl(0, 0%, 100%);
-    padding: 0.75rem;
-    height: 500px;
+    padding: 0.65rem;
     width: 250px;
     border-radius: 2rem;
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2);
+    margin-right: 150px;
 
     &::after {
         content: '';
         position: absolute;
-        top: 0.75rem;
+        top: 0.6rem;
         left: 50%;
         height: 1.25rem;
         width: 50%;
@@ -35,11 +35,10 @@ body {
     &::before {
         content: '';
         position: absolute;
-        top: -211px;
-        right: 205px;
-        background: red;
+        top: -230px;
+        right: 188px;
         width: 520px;
-        height: 82vh;
+        height: 90vh;
         border-radius: 0 0 25rem 25rem;
         background: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
         z-index: -1;
@@ -52,9 +51,12 @@ body {
     border-radius: 1.25rem 1.25rem 0.25rem 0.25rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     box-sizing: border-box;
     padding: 1.25rem 1rem 0 1rem;
+
+    & > * {
+        margin-left: 0.5rem;
+    }
 }
 
 .chevron-left-icon {
@@ -73,7 +75,7 @@ body {
 .user {
     color: #f1d7f8;
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 .status {
@@ -82,9 +84,8 @@ body {
 }
 
 .ellipsis-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
+    display: grid;
+    grid-gap: 1px;
     margin-left: auto;
 
     div {
@@ -102,14 +103,19 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 0.7rem 0.5rem;
+        padding: 0.7rem 0.5rem 0.6rem 0.5rem;
 }
 
 .message {
     font-size: 0.5rem;
     padding: 0.5rem;
-    max-width: 49%;
+    max-width: 52%;
+    margin-top: 0.5rem;
+    line-height: 0.7rem;
+
+    &:first-child {
+        margin-top: 0;
+    }
 
     &-left {
         background: #ede5f4;
@@ -125,9 +131,10 @@ body {
     }
 
     &-images {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
         justify-content: flex-end;
-        gap: 0.5rem;
+        grid-gap: 0.5rem;
         max-width: unset;
         padding: 0;
 
@@ -139,20 +146,21 @@ body {
     }
 
     &-left + &-images, &-left + &-right {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 
     &-right + &-left {
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 
     &-pricing {
         background: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
         color: #fff;
-        display: flex;
+        display: grid;
+        grid-template-columns: 16px auto auto;
         align-items: center;
-        gap: 0.5rem;
-        padding: 0.6rem;
+        grid-gap: 0.5rem;
+        padding: 0.5rem;
         padding-right: 1rem;
         border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
         max-width: 65%;
@@ -161,8 +169,8 @@ body {
 
 .circle {
     border-radius: 50%;
-    width: 0.75rem;
-    height: 0.75rem;
+    width: 0.65rem;
+    height: 0.65rem;
     border: 2px solid #e75bfe;
 }
 
@@ -173,7 +181,7 @@ body {
 .price {
     margin-left: auto;
     font-weight: 700;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .add-message {
@@ -182,11 +190,11 @@ body {
     padding: 0.3rem;
     padding-left: 1rem;
     border-radius: 1.25rem;
-    margin-top: auto;
+    margin-top: 1rem;
 
     input {
         border: 0;
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         font-weight: 500;
         color: hsl(206, 6%, 79%);
         flex: 1;
@@ -200,11 +208,10 @@ body {
         }
     }
 
-    button {
-        border: 0;
+    .send {
         border-radius: 50%;
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 1.5rem;
+        height: 1.5rem;
         background: hsl(271, 36%, 24%);
         color: #fff;
         font-size: 2rem;
@@ -226,17 +233,17 @@ body {
 
     p {
         color: hsl(270, 7%, 64%);
-        line-height: 2rem;
+        line-height: 1.7rem;
     }
 
     &::before {
         content: '';
         position: absolute;
         left: 375px;
-        bottom: -335px;
+        bottom: -360px;
         background: #f7f5fa;
         width: 520px;
-        height: 82vh;
+        height: 90vh;
         border-radius: 25rem 25rem 0 0;
         z-index: -1;
     }
@@ -245,10 +252,17 @@ body {
 @media (max-width: 800px) {
     body {
         flex-direction: column;
-        gap: 50px;
+        margin: 2rem;
+    }
+
+    .smartphone {
+        margin-right: 0;
+        margin-bottom: 50px;
     }
 
     .page-intro {
         text-align: center;
+        width: unset;
+        max-width: 500px;
     }
 }
