@@ -7,6 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.scss">
+
+  <script src="./app.js" defer></script>
   
   <title>Frontend Mentor | Chat app CSS illustration</title>
 </head>
@@ -31,34 +33,36 @@
     </div>
 
     <div class="app-content">
-      <div class="message message-left">That sounds great. I’d be happy with that.</div>
-      <div class="message message-left">Could you send over some pictures of your dog, please?</div>
-      <div class="message message-images">
-        <img src="./images/dog-image-1.jpg" alt="Dog">
-        <img src="./images/dog-image-2.jpg" alt="Dog">
-        <img src="./images/dog-image-3.jpg" alt="Dog">
-      </div>
-      <div class="message message-right">Here are a few pictures. She’s a happy girl!</div>
-      <div class="message message-right">Can you make it?</div>
-      <div class="message message-left">  She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+      <div class="messages">
+        <div class="message message-left">That sounds great. I’d be happy with that.</div>
+        <div class="message message-left">Could you send over some pictures of your dog, please?</div>
+        <div class="message message-images">
+          <img src="./images/dog-image-1.jpg" alt="Dog">
+          <img src="./images/dog-image-2.jpg" alt="Dog">
+          <img src="./images/dog-image-3.jpg" alt="Dog">
+        </div>
+        <div class="message message-right">Here are a few pictures. She’s a happy girl!</div>
+        <div class="message message-right">Can you make it?</div>
+        <div class="message message-left">  She looks so happy! The time we discussed works. How long shall I take her out for?</div>
 
-      <div class="message message-pricing">
-        <div class="circle"></div>
-        <div class="choice">30 minute walk</div>
-        <div class="price">$29</div>
-      </div>
-      <div class="message message-pricing">
-        <div class="circle"></div>
-        <div class="choice">1 hour walk</div>
-        <div class="price">$49</div>
-      </div>
-
-      <div class="add-message">
-        <input type="text" name="message" aria-label="message" placeholder="Type a message...">
-        <div class="send">
-          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+        <div class="message message-pricing">
+          <div class="circle"></div>
+          <div class="choice">30 minute walk</div>
+          <div class="price">$29</div>
+        </div>
+        <div class="message message-pricing">
+          <div class="circle"></div>
+          <div class="choice">1 hour walk</div>
+          <div class="price">$49</div>
         </div>
       </div>
+
+      <form class="add-message" autocomplete="off">
+        <input type="text" name="message" aria-label="message" placeholder="Type a message...">
+        <button class="send">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="#fff"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
+        </button>
+      </form>
     </div>
   </div>
 

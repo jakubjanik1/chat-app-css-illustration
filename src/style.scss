@@ -101,14 +101,21 @@ body {
     }
 }
 
-
 .app-content {
     background: hsl(270, 20%, 96%);
     border-radius: 0 0 1.25rem 1.25rem;
-    flex: 1;
+    padding: 0.7rem 0.5rem 0.6rem 0.5rem;
+}
+
+.messages {
     display: flex;
     flex-direction: column;
-        padding: 0.7rem 0.5rem 0.6rem 0.5rem;
+    overflow-y: scroll;
+    max-height: 362.78px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .message {
@@ -117,6 +124,7 @@ body {
     max-width: 52%;
     margin-top: 0.5rem;
     line-height: 0.7rem;
+    word-break: break-word;
 
     &:first-child {
         margin-top: 0;
@@ -126,6 +134,7 @@ body {
         background: #ede5f4;
         color: hsl(276, 55%, 52%);
         border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
+        align-self: flex-start;
     }
 
     &-right {
@@ -201,7 +210,7 @@ body {
         border: 0;
         font-size: 0.65rem;
         font-weight: 500;
-        color: hsl(206, 6%, 79%);
+        color: #6e5d7e;
         flex: 1;
 
         &::placeholder {
@@ -214,6 +223,7 @@ body {
     }
 
     .send {
+        border: 0;
         border-radius: 50%;
         width: 1.5rem;
         height: 1.5rem;
@@ -223,6 +233,11 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+
+        &:focus {
+            outline: transparent;
+        }
     }
 }
 
