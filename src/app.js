@@ -19,3 +19,12 @@ addMessageForm.addEventListener('submit', e => {
   message.value = ''
   messagesList.scrollTo(0, messagesList.scrollHeight)
 })
+
+const messages = [...document.querySelectorAll('.message')]
+const id = setInterval(() => {
+  if (messages.length === 0) {
+    return clearInterval(id)
+  }
+
+  messages.shift().style.transform = 'translateX(0)'
+}, 2000)

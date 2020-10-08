@@ -125,6 +125,7 @@ body {
     margin-top: 0.5rem;
     line-height: 0.7rem;
     word-break: break-word;
+    transition: 1s ease-in-out;
 
     &:first-child {
         margin-top: 0;
@@ -135,6 +136,7 @@ body {
         color: hsl(276, 55%, 52%);
         border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
         align-self: flex-start;
+        transform: translateX(-105%);
     }
 
     &-right {
@@ -142,6 +144,7 @@ body {
         color: hsl(271, 15%, 43%);
         border-radius: 0.5rem 0.5rem 0.25rem 0.5rem;
         align-self: flex-end;
+        transform: translateX(105%);
     }
 
     &-images {
@@ -149,8 +152,10 @@ body {
         grid-template-columns: repeat(3, auto);
         justify-content: flex-end;
         grid-gap: 0.5rem;
+        align-self: flex-end;
         max-width: unset;
         padding: 0;
+        transform: translateX(105%);
 
         img {
             width: 2.5rem;
@@ -178,6 +183,7 @@ body {
         padding-right: 1rem;
         border-radius: 0.5rem 0.5rem 0.5rem 0.25rem;
         max-width: 65%;
+        transform: translateX(-105%);
     }
 }
 
