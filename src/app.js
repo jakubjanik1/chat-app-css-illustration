@@ -13,6 +13,7 @@ addMessageForm.addEventListener('submit', e => {
   const newMessageElement = document.createElement('div')
   newMessageElement.classList.add('message', 'message-left')
   newMessageElement.textContent = message.value
+  setTimeout(() => newMessageElement.style.transform = 'translateX(0)')
 
   messagesList.append(newMessageElement)
 
@@ -23,8 +24,10 @@ addMessageForm.addEventListener('submit', e => {
 const messages = [...document.querySelectorAll('.message')]
 const id = setInterval(() => {
   if (messages.length === 0) {
+    addMessageForm.elements[0].disabled = false
+    addMessageForm.elements[1].disabled = false
     return clearInterval(id)
   }
 
   messages.shift().style.transform = 'translateX(0)'
-}, 2000)
+}, 800)
