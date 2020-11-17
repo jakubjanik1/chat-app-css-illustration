@@ -12,7 +12,7 @@
 
 </h1>
 
-<h4 align="center">Chat app CSS illustration - challenge solution</h4>
+<h4 align="center">Chat app CSS illustration</h4>
 
 <p align="center">
   <a >
@@ -48,7 +48,7 @@ Here are the links to a [challenge description](https://www.frontendmentor.io/ch
 ## Installation 💾
 
 ``` shell
-git clone https://github.com/jakubjanik1/chat-app-css-illustration.git
+git clone https://github.com/kubajanik/chat-app-css-illustration.git
 
 npm install
 
