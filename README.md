@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-<img src="https://res.cloudinary.com/djc9jias4/image/upload/v1596341165/intro-component-with-signup-form/jaa0re6jaqvgthphcak6.png"  alt="Logo">
+<img src="https://res.cloudinary.com/djc9jias4/image/upload/v1596341165/intro-component-with-signup-form/jaa0re6jaqvgthphcak6.webp"  alt="Logo">
 </p>
 
 </h1>
@@ -12,7 +12,7 @@
 
 <p align="center">
   <a >
-    <img src="https://res.cloudinary.com/djc9jias4/image/upload/v1602411348/chat-app-css-illustration/mrlojgx9zagw8og6fr5w.png"
+    <img src="https://res.cloudinary.com/djc9jias4/image/upload/v1602411348/chat-app-css-illustration/mrlojgx9zagw8og6fr5w.webp"
          alt="Screenshot">
   </a>
 </p>
@@ -34,11 +34,11 @@ Here are the links to a [challenge description](https://www.frontendmentor.io/ch
 ## Screenshots 📺
 
 <p align="center">
-    <img src="https://res.cloudinary.com/djc9jias4/image/upload/v1602412355/chat-app-css-illustration/rentso58cakifuuctcj1.png" alt="Screenshot">
+    <img src="https://res.cloudinary.com/djc9jias4/image/upload/v1602412355/chat-app-css-illustration/rentso58cakifuuctcj1.webp" alt="Screenshot">
 </p>
 
 <p align="center">
-    <img src="https://res.cloudinary.com/djc9jias4/image/upload/v1602412129/chat-app-css-illustration/ufs3yjuy7eojhd3opoa0.png" alt="Screenshot">
+    <img src="https://res.cloudinary.com/djc9jias4/image/upload/v1602412129/chat-app-css-illustration/ufs3yjuy7eojhd3opoa0.webp" alt="Screenshot">
 </p>
 
 ## Installation 💾
